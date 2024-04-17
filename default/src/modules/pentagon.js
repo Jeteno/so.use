@@ -16,7 +16,7 @@ export function Pentagon() {
                      <path d="M20,0 L80,0 L100,60 L50,100 L0,60z" stroke="black" fill="none" />
                   </clipPath>
                </defs>
-               <image class="inner-image" xlink:href="${item}" clip-path="url(#pentagon-mask)" preserveAspectRatio="xMidYMid"/>
+               <image class="inner-image" xlink:href="${item}" clip-path="url(#pentagon-mask)" x="-25%" preserveAspectRatio="xMidYMid"/>
             </svg>
          </div> 
          `;
