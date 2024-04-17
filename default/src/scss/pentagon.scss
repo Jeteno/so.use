@@ -1,0 +1,60 @@
+.pentagon__list {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+.pentagon-container {
+   width: 250px;
+   height: 250px;
+   position: relative;
+   overflow: hidden;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: transform 0.3s ease; 
+   transform-origin: center; 
+   @media screen and (min-width: 1400px) {
+      flex: 1 1 23%;
+   }
+   @media screen and (max-width: 1099px) {
+      flex: 1 1 48%;
+   }
+ }
+ .pentagon {
+   width: 100%;
+   height: 100%;
+ }
+ .inner-image {
+   width: auto;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: transform 0.3s ease; 
+   
+   &:hover {
+      transform: scale(1.2);
+   }
+}
+
+.button {
+   background-color: rgb(33, 34, 39);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   border-radius: 20px;
+   padding: 2% 2.5%;
+   gap: 15px;
+   flex: 1 1 auto;
+   max-width: 325px;
+   color: $yellow;
+   @include adaptiveFont(23, 19);
+   @extend %fontStyleRegular;
+   &:hover {
+      border: 1px solid $yellow;
+      background-color: inherit;
+   }
+}
+ 

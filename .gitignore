@@ -1,0 +1,14 @@
+# Исключить файлы и папки, созданные системой операционной системы
+.DS_Store
+Thumbs.db
+
+# Исключить каталоги node_modules и vendor
+node_modules/
+vendor/
+
+# Исключить файлы настроек IDE
+.vscode/
+.idea/
+
+# Исключить файлы конфигурации composer
+composer.lock
